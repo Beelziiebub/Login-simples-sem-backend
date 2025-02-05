@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUTENTICAÇÃO</title>
+
+    <!-- LINK DO CSS -->
+    <link rel="stylesheet" href="novo.css">
+
+    <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- LINK DO GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+VN:wght@100..400&display=swap" rel="stylesheet">
+
+    <!-- LINK DO JAVASCRIPT -->
+    <script src="novo.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="header"></div>
+        <br>
+        <br>
+        <button onclick="alert('Caso a formatação não esteja sendo exibida, não esqueça de extrair os arquivos baixados da pasta zipada!')">Aviso!</button>
+        <br><button onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLScUeVMEvGeavyQCaLm1BOMgmv0SQyppS8GogUrZbUPNqAj-CA/viewform?usp=sharing'">Feedback</button>
+
+        <br>
+        <br>
+        Foi feito apenas um pequeno projeto em JAVASCRIPT.
+
+    
+    </header>
+
+    <br>
+    <br>
+
+    <!-- Formulário de Login -->
+    <div class="container">
+        <h1>Login</h1>
+        <input type="email" id="email" placeholder="Email">
+        <input type="password" id="loginPassword" placeholder="Senha">
+        <button onclick="login()">Entrar</button>
+        <br>
+        <br>
+        <p><a href="#" onclick="showRegister()">Cadastre-se </a></p>
+        <p><a href="#" onclick="showReset()">Esqueci a senha</i></a></p>
+        <p class="message" id="message"></p>
+    </div>
+
+    <!-- Formulário de Cadastro -->
+    <div class="container" id="registerContainer" style="display:none;">
+        <h2>Cadastrar</h2>
+        <input type="email" id="registerEmail" placeholder="Email">
+        <input type="password" id="registerPassword" placeholder="Senha">
+        <button onclick="register()">Cadastrar</button>
+        <br>
+        <br>
+        <p><a href="#" onclick="showLogin()">Já tenho conta!</a></p>
+        <p class="message" id="registerMessage"></p>
+    </div>
+
+    <!-- Formulário de Redefinição de Senha -->
+    <div class="container" id="resetContainer" style="display:none;">
+        <h2>Redefinir Senha</h2>
+        <br>
+        <input type="email" id="resetEmail" placeholder="Email">
+        <br>
+        <button onclick="resetPassword()">Enviar link de redefinição <i class="bi bi-key-fill"></i></button>
+        <br>
+        <br>
+        <p><a href="#" onclick="showLogin()">Voltar ao Login <i class="bi bi-arrow-90deg-left"></i></a></p>
+        <p class="message" id="resetMessage"></p>
+    </div>
+
+    <br>
+    <br>
+
+    <!-- Redes Sociais -->
+    <section id="sociais">
+        <div class="interface">
+            <h2>Contatos!</h2>
+            <div class="redes-sociais-links">
+                <a href="https://wa.me/5511937772399" target="_blank" class="social-icon linkedin">
+                    <i class="bi bi-whatsapp"></i>
+                </a>
+                <a href="https://github.com/beelziiebub" target="_blank" class="social-icon github">
+                    <i class="bi bi-github"></i>
+                </a>
+                <a href="mailto:261872023@eniac.edu.br" class="social-icon email">
+                    <i class="bi bi-envelope-fill"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer">
+            <p>Beatriz Flandes &copy; 2024 Todos os direitos reservados!
+                <br>
+               
+            </p>
+        </div>
+    </footer>
+
+    <div class="fullscreen">
+        <img src="fundo.gif" alt="GIF em tela cheia">
+    </div>
+
+</body>
+</html>
